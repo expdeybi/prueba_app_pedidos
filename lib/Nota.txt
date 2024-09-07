@@ -1,0 +1,12 @@
+https://supabase.com/docs/reference/dart/select
+
+Join
+
+final data = await supabase
+  .from('users')
+  .select('''
+    name,
+    teams (
+      name
+    )
+  ''');
